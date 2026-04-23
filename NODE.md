@@ -22,11 +22,18 @@ continues to hold the skill implementations, CLI, and docs.
 
 ## Domains
 
-<!-- Baseline scaffold only. Top-level domains can be added below as they are
-     populated. The current bound source repo (gstack) organizes naturally by
-     skill category, CLI tooling, and documentation — grow the tree by concern
-     (what an agent needs to know to decide), not by directory layout. -->
-
+- **[product/](product/NODE.md)** — Thesis, V1 scope, ethos (Boil the Lake,
+  Search Before Building, User Sovereignty), design-system voice rules.
+- **[architecture/](architecture/NODE.md)** — Skill system, browser daemon,
+  security model, multi-host integration.
+- **[skills/](skills/NODE.md)** — The skill library, grouped by concern:
+  planning, design, qa, release, review, devex, observability, safety,
+  browser, debug, docs, meta.
+- **[conventions/](conventions/NODE.md)** — Cross-cutting patterns:
+  versioning, proactive suggestion, second opinion, voice triggers,
+  learnings, checkpointing, community guardrails.
+- **[infrastructure/](infrastructure/NODE.md)** — Telemetry (opt-in,
+  Supabase), testing strategy (three-tier with `claude -p` E2E).
 - **[members/](members/NODE.md)** — Team member definitions and responsibilities.
 
 ---

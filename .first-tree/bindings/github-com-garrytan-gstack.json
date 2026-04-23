@@ -1,0 +1,12 @@
+{
+  "bindingMode": "standalone-source",
+  "entrypoint": "/",
+  "remoteUrl": "https://github.com/garrytan/gstack.git",
+  "rootKind": "git-repo",
+  "scope": "repo",
+  "sourceId": "github-com-garrytan-gstack",
+  "sourceName": "gstack-repo",
+  "treeMode": "dedicated",
+  "treeRepoName": "gstack-repo-tree",
+  "schemaVersion": 3
+}

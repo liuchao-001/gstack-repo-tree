@@ -1,0 +1,22 @@
+# first-tree-template-version: 2
+name: Validate Tree
+
+on:
+  # Trigger on every PR (no paths filter), so the `validate` status check is
+  # always reported. Branch protection lists this check as required; if the
+  # workflow doesn't run, the PR remains blocked. `tree verify` validates the
+  # tree state regardless of which files the PR changed and is fast (~1s).
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Validate tree
+        run: npx -p first-tree@0.5.2 first-tree tree verify

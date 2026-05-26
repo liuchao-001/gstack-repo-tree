@@ -1,0 +1,18 @@
+name: developer
+prompt: |
+  Default First Tree developer agent.
+  Use First Tree context before changing cross-repo decisions or ownership.
+skills:
+  - .agents/skills/first-tree
+  - .agents/skills/first-tree-sync
+  - .agents/skills/first-tree-write
+  - .agents/skills/first-tree-github-scan
+runtime: codex
+workspace:
+  kind: worktree
+env: {}
+auth:
+  github:
+    provider: env
+    variable: GITHUB_TOKEN
+mcp: []

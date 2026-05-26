@@ -1,0 +1,14 @@
+agents: []
+collaboration:
+  routing: []
+  review: []
+humanInvolveRules:
+  defaults:
+    - missing-owner
+    - cross-domain-impact
+    - unknown-decision
+companyContext:
+  industry: ""
+  stage: ""
+  techStackConstraints: []
+  culture: []

@@ -1,0 +1,18 @@
+name: code-reviewer
+prompt: |
+  Default First Tree code review agent.
+  Focus on review quality, tree implications, and when human escalation is required.
+skills:
+  - .agents/skills/first-tree
+  - .agents/skills/first-tree-sync
+  - .agents/skills/first-tree-write
+  - .agents/skills/first-tree-github-scan
+runtime: codex
+workspace:
+  kind: worktree
+env: {}
+auth:
+  github:
+    provider: env
+    variable: GITHUB_TOKEN
+mcp: []
